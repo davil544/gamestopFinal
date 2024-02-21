@@ -1,0 +1,2 @@
+﻿Image Handlers go here
+See Images amd Data Date documentation on teachers website.

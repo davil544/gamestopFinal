@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Gamestop.master.cs" Inherits="gamestopFinal.Gamestop" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="page-header">
+            <h1 style="padding-left: 10px; text-align:center;"><img src="/Assets/GameStopLogo.png" alt="Gamestop - Power to the players!" style="height: 130px; width: 545px" /></h1>
+        </div>
+
+        <div class="container">
+            <asp:ContentPlaceHolder ID="body" runat="server" />
+        </div>
+    </form>
+</body>
+</html>

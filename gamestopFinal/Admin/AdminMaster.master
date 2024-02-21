@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Gamestop.Master" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="gamestopFinal.Admin.AdminMaster" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="adminHead" runat="server" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
+    <div style="text-align: right; width: 100%;"><h5> Currently Signed in as Administrator,  <a href="/Admin/logout.aspx"> click here to log out</a></h5></div>
+
+    <table style="width: 100%">
+        <tr>
+            <td style="width:18%; vertical-align:text-top; border:1px solid black; padding:5px;">
+                <h4>Gamestop Administration</h4> <br />
+                <h5> <a href="/Admin/Index.aspx">Admin Home</a></h5>
+                <h5> <a href="/Admin/Employees/ListEmployees.aspx">Employee Management</a></h5>
+                <h5> <a href="/Admin/Customers/ListCustomers.aspx">Customer Management</a></h5>
+                <h5> <a href="/Admin/Inventory/Products.aspx">Inventory Management</a></h5>
+            </td>
+
+            <td style="width: 82%; padding-left:10px;"><asp:ContentPlaceHolder ID="adminBody" runat="server" /></td>
+        </tr>
+    </table>
+    
+</asp:Content>

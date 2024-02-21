@@ -1,0 +1,55 @@
+
+            if (games[0].inCart == true)
+            {
+                c[0] = "Red Dead Redemption 2 <br />" +
+                     "$59.99 <br /> <br />";
+                c[0] = games[0].productName + " <br />" +
+                    games[0].productCost + " <br /><br />";
+                subtotal += games[0].productCost;
+            }
+            if (inv.CartGrfs == true)
+            {
+                c[1] = "Tom Clancy's Ghost Recon: Future Soldier <br />" +
+                     "$19.99 <br /> <br />";
+                subtotal += 19.99;
+            }
+            if (inv.CartForza7 == true)
+            {
+                c[2] = "Forza Motorsport 7 <br />" +
+                     "$49.99 <br /> <br />";
+                subtotal += 49.99;
+            }
+
+
+Action Packed Racing Game
+Tom Clancy's Ghost Recon: Future Soldier
+
+ if (ImageID != -1)
+            {
+                theImage = theTier.getImage(ImageID);
+            }
+            else
+            {
+                theImage = theTier.getImage(-1);
+            }
+
+c[i] = games[i].productName + " <br />$" +
+                        games[i].productCost + " <br /><br />";
+
+</asp:Panel>
+
+
+            Product[] games = (Product[])Session["cart"];   Status s = (Status)Session["s"];
+            Session["cart"] = games;
+
+System.FormatException
+  HResult=0x80131537
+  Message=Input string was not in a correct format.
+  Source=mscorlib
+  StackTrace:
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at gamestopFinal.Checkout.btnContinue_Click(Object sender, EventArgs e) in G:\gamestopFinal\gamestopFinal\Checkout.aspx.cs:line 78
+
+New-age western open world Adventure!

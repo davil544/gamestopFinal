@@ -1,0 +1,30 @@
+﻿foreach (Product item in ProductList) {
+	theLabel.Text = item.Name;
+}
+
+private void btnAddToCArt (object sender, envetArgs e) {
+	Button myButton = (Button) sender ---> Inheriting ID from button to get right image and item for cart
+	int productID = myButton.ID; ---> May have to cast as int
+	ProductTier tier = new ProductTier()--> Instatntiate data tier
+	Product prod = ProductTier.getProductByID(productID);
+	List<Product> ProdList;
+
+	if (Session["cart"] != null) {
+		ProdList = (List<Product>) Session["cart"];
+		ProdList.Add(prod);
+		Session["cart"] = ProdList;
+		///Lists have a count, to see how many items are in cart, using count variable in list in session variable.
+		///set label to ProductList.Count;
+	}
+	else {
+		ProdList = new List<Product>();
+		ProdList.Add(prod);
+		Session["cart"] = ProdList;
+		///Session variables are part of list of object type, can be any object type
+		///(double, string, etc.)
+	}
+}
+
+///Wont be on test ^
+///Put code attemped in documentation that doesnt work, explain why it wont work
+///and what was attempted.
